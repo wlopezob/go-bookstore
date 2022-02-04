@@ -9,7 +9,7 @@ WORKDIR /go/src/app
 COPY go.mod .
 RUN go mod download
 COPY . .
-RUN go build cmd/src/main.go
+RUN go build cmd/main/main.go
 #CMD [ "./main" ]
 
 # Building image with the binary
